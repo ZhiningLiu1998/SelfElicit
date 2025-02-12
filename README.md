@@ -26,6 +26,9 @@ Overview of SelfElicit Workflow.
   - [Run Examples](#run-examples)
   - [Arguments Description](#arguments-description)
 - [📈 Results and Examples](#-results-and-examples)
+  - [Qualitative Examples](#qualitative-examples)
+  - [Boosting QA Performance](#boosting-qa-performance)
+  - [Efficient Inference-Time Augmentation](#efficient-inference-time-augmentation)
 - [🗂️ Code Structure](#️-code-structure)
   - [Main modules](#main-modules)
 
@@ -89,17 +92,29 @@ Follow these steps to run an experiment:
 
 ## 📈 Results and Examples
 
-<p align="center">
-<img src="https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/selfelicit/results.png" alt="" style="width:100%;">
-<br>
-Main results of using SelfElicit on 4 context-based QA tasks with 6 different LMs.
-</p>
+### Qualitative Examples
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/selfelicit/examples.png" alt="" style="width:100%;">
 <br>
-Examples of SelfElicit highlighting evidence in the context passage.
+Examples of SelfElicit highlighting evidence and helping LM to get the correct answer.
 </p>
+
+### Boosting QA Performance
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/selfelicit/results.png" alt="" style="width:100%;">
+<br>
+SelfElicit brings versatile performance boost on 4 context-based QA tasks with 6 different LMs.
+</p>
+
+### Efficient Inference-Time Augmentation
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/selfelicit/runtime.png" alt="" style="width:100%;">
+SelfElicit is computationally efficient and does not require additional training.
+</p>
+
 
 
 ## 🗂️ Code Structure
