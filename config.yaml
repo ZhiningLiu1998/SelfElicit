@@ -1,0 +1,25 @@
+hf_token: "Your HF Token" # replace to your own HuggingFace token
+model_id: "meta-llama/Meta-Llama-3.1-8B-Instruct"
+methods:
+  - "Base"
+  - "COT"
+  - "FullElicit"
+  - "PromptElicit"
+  - "SelfElicit"
+datasets:
+  - "HotpotQA"
+  - "NewsQA"
+  - "TQA"
+  - "NQ"
+alpha: 0.5
+layer_span: [0.5, 1.0]
+gpu_ids: [0]
+n_samples: 1000
+random_state: 0
+max_ans_tokens: 100
+marker_impstart: "<START_IMPORTANT>"
+marker_impend: "<END_IMPORTANT>"
+qa_inst: "Directly answer the question based on the context passage, no explanation is needed. If the context does not contain any evidence, output 'I cannot answer based on the given context.'"
+se_inst: "Directly answer the question based on the context passage, no explanation is needed. Within the context, {MARKER_IMPSTART} and {MARKER_IMPEND} are used to mark the important evidence. Read carefully but still keep your answer short, do not output the markers. If the context does not contain any evidence, output 'I cannot answer based on the given context.'"
+cot_inst: "Directly answer the question based on the context passage, no explanation is needed. If the context does not contain any evidence, output 'I cannot answer based on the given context.' Think step by step to provide the answer."
+pe_inst: "Please find the supporting evidence sentences from the context for the question, then copy-paste the original text to output without any additional words. Template for output: '\n- [sentence1]\n- [sentence2] ...'"
