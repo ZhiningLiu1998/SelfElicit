@@ -1,8 +1,14 @@
 <h1 align="center">
-SelfElicit: Your Language Model Secretly Knows Where Are the Contextual Evidences
+🕵️‍♂SelfElicit: Your Language Model Secretly Knows Where is the Relevant Evidence!
 </h1>
 
-**SelfElicit** is an inference-time context augmentation framework for context-based Question Answering (QA). It leverages the inherent ability of pretrained language models (LMs) to automatically extract and highlight key evidence from the context passage, helping the LM focus on critical information and providing more accurate and factually grounded answers. The approach is model-agnostic, computationally efficient, and does not require additional training.
+**SelfElicit** is an inference-time context augmentation framework for context-based Question Answering (QA). It leverages the inherent ability of specific attention layers of pre-trained language models (LMs) to automatically extract and highlight key evidence from the context passage, helping the LM focus on critical information and providing more accurate and factually grounded answers. The approach is model-agnostic, computationally efficient, and does not require additional training.
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/selfelicit/intro.png" alt="" style="width:50%;">
+<br>
+Overview of SelfElicit Workflow.
+</p>
 
 **Please see [`run_experiment.ipynb`](run_experiment.ipynb) for a step-by-step guide for running the experiments and visualizing results.**
 
@@ -19,6 +25,7 @@ SelfElicit: Your Language Model Secretly Knows Where Are the Contextual Evidence
   - [Dependencies](#dependencies)
   - [Run Examples](#run-examples)
   - [Arguments Description](#arguments-description)
+- [📈 Results and Examples](#-results-and-examples)
 - [🗂️ Code Structure](#️-code-structure)
   - [Main modules](#main-modules)
 
@@ -77,6 +84,22 @@ Follow these steps to run an experiment:
 | `--se_inst`         | Instruction for context-based QA with SelfElicit highlighting. Must contain markers. | "Directly answer the question based on the context passage, no explanation is needed. Within the context, {MARKER_IMPSTART} and {MARKER_IMPEND} are used to mark the important evidence. Read carefully but still keep your answer short, do not output the markers. If the context does not contain any evidence, output 'I cannot answer based on the given context.'" |
 | `--cot_inst`        | Instruction for context-based QA with Chain-of-Thought (COT) prompting.              | "Directly answer the question based on the context passage, no explanation is needed. If the context does not contain any evidence, output 'I cannot answer based on the given context.' Think step by step to provide the answer."                                                                                                                                      |
 | `--pe_inst`         | Instruction for extracting evidence from the context (1st step of PromptElicit).     | "Please find the supporting evidence sentences from the context for the question, then copy-paste the original text to output without any additional words. Template for output: '\n- [sentence1]\n- [sentence2] ...'"                                                                                                                                                   |
+
+
+
+## 📈 Results and Examples
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/selfelicit/results.png" alt="" style="width:100%;">
+<br>
+Main results of using SelfElicit on 4 context-based QA tasks with 6 different LMs.
+</p>
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/selfelicit/examples.png" alt="" style="width:100%;">
+<br>
+Examples of SelfElicit highlighting evidence in the context passage.
+</p>
 
 
 ## 🗂️ Code Structure
