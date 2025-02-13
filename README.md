@@ -14,9 +14,9 @@ Overview of SelfElicit Workflow.
 
 ## 🌈 SelfElicit Features
 
-- 💡**Automatic Evidence Highlighting**: SelfElicit uses attention patterns in LMs to automatically identify crucial evidence within the context, thereby helping the model to focus on relevant information.
-- 🚀**Model-Agnostic Booster**: Boost with various families of LMs with different sizes and architectures, tested with Llama3.1 (8B, 70B), Mistral (7B, 12B), and Qwen2.5 (7B, 32B).
-- 🪽**Light-weight Inference-Time Augmentation**: Applies evidence selection and context highlighting during inference, without requiring iterative prompting or additional training.
+- 💡[**Automatic Evidence Highlighting**](#qualitative-examples): SelfElicit uses attention patterns in LMs to automatically identify crucial evidence within the context, thereby helping the model to focus on relevant information.
+- 🚀[**Model-Agnostic Booster**](#boosting-qa-performance): Boost with various families of LMs with different sizes and architectures, tested with Llama3.1 (8B, 70B), Mistral (7B, 12B), and Qwen2.5 (7B, 32B).
+- 🪽[**Light-weight Inference-Time Augmentation**](#efficient-inference-time-augmentation): Applies evidence selection and context highlighting during inference, without requiring iterative prompting or additional training.
 
 ## 📑 Table of Contents
 - [🌈 SelfElicit Features](#-selfelicit-features)
