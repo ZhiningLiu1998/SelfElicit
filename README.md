@@ -100,6 +100,12 @@ Follow these steps to run an experiment:
 Examples of SelfElicit highlighting evidence and helping LM to get the correct answer.
 </p>
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/ZhiningLiu1998/figures/refs/heads/master/selfelicit/layeratt.png" alt="" style="width:100%;">
+<br>
+The "Evidence Reading Layers" pay high attention to the evidence sentences and exist across different LMs.
+</p>
+
 ### Boosting QA Performance
 
 <p align="center">
