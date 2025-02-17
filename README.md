@@ -18,8 +18,20 @@ Overview of SelfElicit Workflow.
 - 🚀[**Model-Agnostic Booster**](#boosting-qa-performance): Boost with various families of LMs with different sizes and architectures, tested with Llama3.1 (8B, 70B), Mistral (7B, 12B), and Qwen2.5 (7B, 32B).
 - 🪽[**Light-weight Inference-Time Augmentation**](#efficient-inference-time-augmentation): Applies evidence selection and context highlighting during inference, without requiring iterative prompting or additional training.
 
+## 🤗 Citing SelfElicit
+Please cite us if you find our work or this repository helpful in your research : )
+```bibtex
+@article{liu2025selfelicit,
+  title={SelfElicit: Your Language Model Secretly Knows Where is the Relevant Evidence},
+  author={Liu, Zhining and Amjad, Rana Ali and Adkathimar, Ravinarayana and Wei, Tianxin and Tong, Hanghang},
+  journal={arXiv preprint arXiv:2502.08767},
+  year={2025}
+}
+```
+
 ## 📑 Table of Contents
 - [🌈 SelfElicit Features](#-selfelicit-features)
+- [🤗 Citing SelfElicit](#-citing-selfelicit)
 - [📑 Table of Contents](#-table-of-contents)
 - [🛫 Quick Start](#-quick-start)
   - [Dependencies](#dependencies)
